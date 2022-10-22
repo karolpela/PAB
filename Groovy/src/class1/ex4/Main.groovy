@@ -1,4 +1,4 @@
-package ex4
+package class1.ex4
 
 def numbersToWords =
         [1: "jeden",

@@ -1,4 +1,4 @@
-package ex5
+package class1.ex5
 
 import javax.swing.JOptionPane
 
