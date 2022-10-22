@@ -26,4 +26,3 @@ def static getInts() {
     }
     return items.collect { it as Integer }
 }
-
