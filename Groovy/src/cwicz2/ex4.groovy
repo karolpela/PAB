@@ -1,4 +1,4 @@
-package class2.ex4
+package cwicz2
 
 import javax.swing.JOptionPane
 

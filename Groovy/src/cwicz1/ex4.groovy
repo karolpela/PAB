@@ -1,4 +1,4 @@
-package class1.ex4
+package cwicz1
 
 def numbersToWords =
         [1: "jeden",

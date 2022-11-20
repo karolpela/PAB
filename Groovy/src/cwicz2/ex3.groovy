@@ -1,4 +1,4 @@
-package class2.ex3
+package cwicz2
 
 print apply([1, 2, 3], { a -> a + 1 })
 

@@ -1,4 +1,4 @@
-package class2.ex1
+package cwicz2
 
 (maxVal, indList) = maximum([5, 3, 5, 5, 1, 5])
 println "Maximum: $maxVal"

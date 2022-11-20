@@ -1,4 +1,4 @@
-package class2.ex5
+package cwicz2
 
 def list = (1..40)
 
