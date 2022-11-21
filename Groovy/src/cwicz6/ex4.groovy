@@ -22,7 +22,7 @@ def eurRate = Double.parseDouble((nbpResponse["rates"] as Map)[0]["mid"] as Stri
 def eurList = plnList*.
         replace(" PLN", "")*.
         toDouble()*.
-        div(eurRate as Double)*.
+        div(eurRate)*.
         toDouble()*.
         round(2)*.
         toString()*.
