@@ -1,0 +1,5 @@
+Pizza 45.00
+Spaghetti 35.00
+Zupa 20.00
+Tiramisu 15.00
+Sernik 13.00
