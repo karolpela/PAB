@@ -16,8 +16,7 @@ def comparator = new Comparator<String>() {
 }
 def words = new TreeSet(comparator)
 
-def baseDir = System.getProperty("user.dir")
-def input = new File(baseDir, '/data/Lorem.txt')
+def input = new File('./data/Lorem.txt')
 input.splitEachLine(" ") { List<String> line ->
     def cleanedUp = line.collect {
         it.endsWithAny(',', '.') ? // remove punctuation

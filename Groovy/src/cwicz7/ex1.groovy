@@ -4,8 +4,7 @@ package cwicz7
 import static groovy.json.JsonOutput.prettyPrint
 import static groovy.json.JsonOutput.toJson
 
-def baseDir = System.getProperty("user.dir")
-def input = new File(baseDir, '/data/Projekty.txt')
+def input = new File('./data/Projekty.txt')
 def programmers = [:].withDefault { [] }
 def projects = [:].withDefault { [] }
 //noinspection GroovyMissingReturnStatement
