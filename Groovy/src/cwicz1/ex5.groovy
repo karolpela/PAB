@@ -1,6 +1,6 @@
 package cwicz1
 
-import javax.swing.JOptionPane
+import javax.swing.*
 
 def items = [:]
 

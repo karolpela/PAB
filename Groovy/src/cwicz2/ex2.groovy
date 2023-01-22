@@ -1,6 +1,6 @@
 package cwicz2
 
-import javax.swing.JOptionPane
+import javax.swing.*
 
 print getInts()
 

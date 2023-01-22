@@ -1,11 +1,13 @@
 package cwicz7
 
-import static groovy.json.JsonOutput.*
+
+import static groovy.json.JsonOutput.prettyPrint
+import static groovy.json.JsonOutput.toJson
 
 def baseDir = System.getProperty("user.dir")
-def input = new File(baseDir,'/data/Projekty.txt')
-def programmers = [:].withDefault {[]}
-def projects = [:].withDefault {[]}
+def input = new File(baseDir, '/data/Projekty.txt')
+def programmers = [:].withDefault { [] }
+def projects = [:].withDefault { [] }
 //noinspection GroovyMissingReturnStatement
 input.splitEachLine('\t') {
     def project = it[0]
@@ -16,7 +18,7 @@ input.splitEachLine('\t') {
 
     def participants = it[1..-1]
     participants.removeAll("")
-    participants.each {p ->
+    participants.each { p ->
         programmers[p].add(project)
     }
 

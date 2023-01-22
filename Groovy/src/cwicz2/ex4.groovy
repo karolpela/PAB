@@ -1,6 +1,6 @@
 package cwicz2
 
-import javax.swing.JOptionPane
+import javax.swing.*
 
 println getData(Integer) { it > 0 }     // liczby całkowite większe od 0
 println getData() { it.size() > 3 }   // słowa o długości większej od 3 (domyślny typ: String)
