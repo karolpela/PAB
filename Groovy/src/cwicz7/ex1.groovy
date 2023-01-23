@@ -11,7 +11,7 @@ def projects = [:].withDefault { [] }
 input.splitEachLine('\t') {
     def project = it[0]
 
-    if (it.size() !== 1) {
+    if (it.size() == 1) {
         return
     }
 
@@ -26,8 +26,8 @@ input.splitEachLine('\t') {
     }
 }
 
-def projectsOutput = new File(baseDir, 'out/ProjektyDuze.txt')
+def projectsOutput = new File('./out/ProjektyDuze.txt')
 projectsOutput.write(prettyPrint(toJson(projects)))
-def programmersOutput = new File(baseDir, 'out/Programisci.txt')
+def programmersOutput = new File('./out/Programisci.txt')
 programmersOutput.write(prettyPrint(toJson(programmers)))
 
