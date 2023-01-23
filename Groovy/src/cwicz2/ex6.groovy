@@ -1,6 +1,11 @@
 //file:noinspection GroovyAssignabilityCheck
 package cwicz2
 
+//def myFib
+//myFib = { n -> n <= 1 ? 1G : myFib.trampoline(n - 1) + myFib.trampoline(n - 2) }.trampoline()
+//println myFib(300)
+//// doesn't work with two method calls
+
 def fibTrampoline
 
 fibTrampoline = { first = 0G, second = 1G, n ->
